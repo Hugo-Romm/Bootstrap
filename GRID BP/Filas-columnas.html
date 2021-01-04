@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filas y columnas Bootstrap</title>
+  <!-- CSS Bootstrap -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    <style>
+        [class^="col"]:nth-child(even) {
+            background-color: red;
+            border: 1px solid black;
+            text-align: center;
+            height: 100px;
+        }
+        [class^="col"]:nth-child(odd) {
+            background-color: rgb(4, 0, 255);
+            border: 1px solid black;
+            text-align: center;
+            height: 100px;
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col">Columnas</div>
+            <div class="col">Columnas</div>
+            <div class="col">Columnas</div>
+        </div>
+        <div class="row">
+            <div class="col">Columna normal</div>
+            <div class="col-auto">columna automatica</div>
+            <div class="col">Columna normal 2</div>
+        </div>
+        <div class="row">
+            <div class="col-3">3 columnas</div>
+            <div class="col-6">6 columnas</div>
+            <div class="col-3">3 columnas xdxdxddddd</div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-8">Columna 1</div>
+            <div class="col-12 col-md-6 col-lg-4">Columna 2</div>
+        </div>
+        <div class="row">
+            <div class="col-4">columnas</div>
+            <div class="col-4">columnas</div>
+            <div class="w-100"></div>
+            <div class="col-4">columnas</div>
+            <div class="col-4">columnas</div>
+        </div>
+        <h1>rows</h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+            <div class="col">columnas</div>
+            <div class="col">columnas</div>
+            <div class="col">columnas</div>
+            <div class="col">columnas</div>
+            <div class="col">columnas</div>
+            <div class="col">columnas</div>
+            <div class="col">columnas</div>
+            <div class="col">columnas</div>
+        </div>
+    </div>
+  
+
+  <!-- JQuery -->
+  <script src="/js/jquery-3.5.1.min.js"></script>
+  <!-- Popper.js -->
+  <script src="/js/popper.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>
